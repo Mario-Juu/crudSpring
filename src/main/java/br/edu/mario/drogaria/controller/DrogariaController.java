@@ -1,14 +1,12 @@
 package br.edu.mario.drogaria.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/drogaria")
 public class DrogariaController {
-    @RequestMapping("/ola")
-    public String exibirMensagem(){
-        return "Olá, todos!";
-    }
+
 
 }
