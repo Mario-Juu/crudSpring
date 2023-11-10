@@ -15,8 +15,8 @@ public class ProdutoRepositoryTests {
     private ProdutoRepository produtoRepository;
     @Test
     public void inserir(){
-        Produto p = new Produto(null, "Desodorante", Short.valueOf("15"), BigDecimal.valueOf(10.50), LocalDate.of(2022,8,11));
-        Produto p2 = new Produto(null, "Buscopan", Short.valueOf("10"), BigDecimal.valueOf(13.00), LocalDate.of(2026,9,21));
+        Produto p = new Produto(null, "Desodorante", Short.valueOf("15"), BigDecimal.valueOf(10.50), LocalDate.of(2022,8,11),null);
+        Produto p2 = new Produto(null, "Buscopan", Short.valueOf("10"), BigDecimal.valueOf(13.00), LocalDate.of(2026,9,21),null);
         produtoRepository.save(p);
         produtoRepository.save(p2);
     }
